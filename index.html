@@ -59,6 +59,34 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Style Temporaire-->
+  <style>
+     body 
+     {
+      padding-top: 10px;
+     }
+     [class*="col-"], nav
+     {
+      background-color: lightgreen;
+      border: 2px solid black;
+      border-radius: 6px;
+      line-height: 40px;
+      text-align: center;
+     }
+     #entete 
+     {
+      background-image: url(images/header-festival.jpg);
+      background-position: center;
+      height: 800px;
+      line-height: 40px;
+      text-align: center;
+     }
+     #pied
+     {
+      background-color: #191919;
+     }
+    </style>
 </head>
 
 <body>
@@ -66,63 +94,61 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
+  <!-- Contenu du site ICI -->
   
-  <!-- Navigation fixe en haut de page-->
   <div class="container-fluid">
-  <nav class="row text-center">
-  		<!-- logo du Festival -->
-  		<img src="img/logo.png" />
-  		<!-- Réseaux sociaux -->
-  		<a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-  		<!-- Menu Horizontal -->
-  		Accueil
-  		Présentation
-  		Films
-  		Actualités
-  		Contact
 
-  </nav>
+    <!-- Navigation : Logo+réseaux sociaux+menu -->
+    <nav class="row">Navigation</nav>
+    
+    <!-- Header : Présentation Logo+titre+slogan -->
+    <header id="entete" class="row">Header</header>  
+  </div>
+    
+  <div class="container">
+
+    <!-- Films : Programmation et réservation -->
+    <section id="films" class="row">
+      <article class="col-md-offset-2 col-md-8">Films</article>
+    </section>  
+
+    <!-- Actualités du plus récent aux plus vieux -->
+    <section id="actus" class="row">
+      <article class="col-sm-6 col-md-4">Actualité 1</article>
+      <article class="hidden-xs col-sm-6 col-md-4">Actualité 2</article>
+      <article class="hidden-xs hidden-sm col-md-4">Actualité 3</article>
+    </section>
+
+    <!-- Partenaires : sous forme d'images avec lien -->
+    <section id="partenaires" class="row">
+      <article class="col-xs-6 col-sm-4 col-md-3">Image Partenaire 1</article>
+      <article class="col-xs-6 col-sm-4 col-md-3">Image Partenaire 2</article>
+      <article class="hidden-xs col-sm-4 col-md-3">Image Partenaire 3</article>
+      <article class="hidden-xs hidden-sm col-md-3">Image Partenaire 4</article>
+    </section>
+  </div>
+  
+  <div class="container-fluid">
+  	
+  	<!-- Footer -->
+    <footer id="pied" class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4">
+            <address>
+                <p>Association Festival Les Films de Plein Air</p>
+                <p><strong>Parc Monceau</strong><br>
+                35 Boulevard de Courcelles<br>
+                75008 Paris<br>
+            </address>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4">
+            Mentions légales - Politique de confidentialités
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            Formulaire de Contact
+        </div>  
+    </footer>  
   
   </div>
-  <!-- Header -->
-  <div class="container">
-  <header class="row">
-  		<div class="col-xs-12 col-sm-10 col-md-8">
-  			<div class="reveal-inline-block text-extra-small">
-  				<span class="text-middle inset-right-10 icon icon-xxs icon-white mdi mdi-calendar-today">Icône Calendrier</span>
-  				<span class="text-middle inset-right-10 icon icon-xxs icon-white mdi mdi-calendar-today">Date</span>
-  			</div> 
-  			<hr class="divider divider-vertical reveal-inline-block">
-  			<div class="reveal-inline-block text-extra-small">
-  				<span class="text-middle inset-right-10 icon icon-xxs icon-white mdi mdi-map-marker">Icône Location</span>
-  				<span class="text-middle">Adresse</span>
-  			</div>
-  			<img class="img-responsive center-block offset-top-65" src="images/title.png" alt="">Logo Titre Festival
-  			<p class="offset-top-36 animateItem" data-animation="fadeInUp" data-delay="0.1" data-duration="1">Slogan : Our festival annually gathers popular groups, performers, DJs, musicians, and <br class="veil reveal-md-inline-block">their fans from all over the world in one place. Enjoy your favorite music live at Event Festival!</p>
-  			
-
-  			Bouton Réserver | Bouton Contact
-  			Optionnel : Comtpe à rebours
-
-  		</div>
-  </header>
-  </div>
-  <!-- Section Films -->
-  <section></section>
-  <!-- Section Actualités -->
-  <section></section>
-  <!-- Section Partenaires -->
-  <section></section>
-  <!-- Footer -->
-  <footer></footer>
-
-
-
 
   <!-- SCRIPT -->
 
