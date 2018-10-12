@@ -74,13 +74,19 @@
       line-height: 40px;
       text-align: center;
      }
+     #navigation
+     {
+     	background-color: #212121;
+     	color: white;
+     }
      #entete 
      {
-      background-image: url(images/header-festival.jpg);
+      background-image: url(img/header-festival.jpg);
       background-position: center;
       height: 800px;
       line-height: 40px;
       text-align: center;
+      color: white;
      }
      #pied
      {
@@ -99,10 +105,33 @@
   <div class="container-fluid">
 
     <!-- Navigation : Logo+réseaux sociaux+menu -->
-    <nav class="row">Navigation</nav>
+    <nav id="navigation" class="row">
+    <!-- logo -->
+    <div>
+    	<img class="img-responsive" src="img/logo-filmpleinair.png" />
+    </div>
+	<!-- Réseaux sociaux -->
+	<div>	
+		<a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+  		<a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+  		<a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+  		<a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+  		<a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+  	</div>
+  	<!-- Menu -->
+	<div>
+		Menu
+	</div>
+	</nav>
     
     <!-- Header : Présentation Logo+titre+slogan -->
-    <header id="entete" class="row">Header</header>  
+    <header id="entete" class="row">
+    	<p>Header</p> 
+    	<i class="glyphicon glyphicon-calendar"></i> 5-8 Août 2019 | <i class="glyphicon glyphicon-map-marker"></i>Parc Monceau, Paris</p> 
+    	<p>(Logo, titre, slogan)</p>
+    </header>
+
+    <!-- OPTION : COMPTE A REBOURS-->  
   </div>
     
   <div class="container">
