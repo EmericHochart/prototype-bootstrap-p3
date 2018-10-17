@@ -64,16 +64,14 @@
   <style>
      body 
      {
-      padding-top: 10px;
+        padding-top: 60px;
      }
-     [class*="col-"], nav
+     section
      {
-      background-color: lightgreen;
-      border: 2px solid black;
-      border-radius: 6px;
-      line-height: 40px;
-      text-align: center;
+     	margin: auto;
+     	padding: 80px 0;
      }
+     
      #navigation
      {
      	background-color: #212121;
@@ -88,10 +86,305 @@
       text-align: center;
       color: white;
      }
+     #films
+     {
+     	height: auto;
+
+     }
+     #actus
+     {
+     	height: auto;
+     }
+     #partenaires
+     {
+       	background-image: url(img/parc-monceau.jpg);
+     	background-attachment: fixed;
+     	position: relative;
+    	background-size: cover;
+     }
      #pied
      {
       background-color: #191919;
      }
+
+     .well 
+     {
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-left: 0px;
+      }
+     .panel-default>.panel-heading 
+    {
+       background-color: #fff;
+       border-color: #fff;
+    }
+
+	/* Style Tab ----------------------------------------------------------------------- */
+	/* Style by Richard Gonyeau modified by Emeric Hochart ----------------------------- */
+
+	h1, h2, h3, h4, h5, h6 
+	{
+	  font-family: 'Source Sans Pro';
+	  font-weight:700;
+	}
+
+	.fancyTab 
+	{
+		text-align: center;
+	  	padding:15px 0;
+	  	background-color: #d8d8d8;
+		box-shadow: 0 0 0 1px #ddd;
+		top:15px;	
+	  	transition: top .2s;
+	}
+	.fancyTab.active 
+	{
+	  	top:0;
+	  	transition:top .2s;
+	}
+	.whiteBlock 
+	{
+	  	display:none;
+	}
+	.fancyTab.active .whiteBlock 
+	{
+	  	display:block;
+	  	height:2px;
+	  	bottom:-2px;
+	  	background-color:#fff;
+	  	width:99%;
+	  	position:absolute;
+	  	z-index:1;
+	}
+	.fancyTab a 
+	{
+		font-family: 'Source Sans Pro';
+		font-size:1.65em;
+		font-weight:300;
+	  	transition:.2s;
+	  	color:#9b9b9b;
+	}
+	/*.fancyTab .hidden-xs {
+	  white-space:nowrap;
+	}*/
+	.fancyTabs 
+	{
+		border-bottom:2px solid #ddd;
+	  	margin: 15px 0 0;
+	}
+	li.fancyTab a
+	{
+	  	padding-top: 15px;
+	  	top:-15px;
+	  	padding-bottom:0;
+	}
+	li.fancyTab.active a 
+	{
+	  	padding-top: inherit;
+	}
+	.fancyTab .fa 
+	{
+	  	font-size: 40px;
+	  	width:100%;
+		padding: 15px 0 5px;
+	  	color:#9b9b9b;
+	}
+	.fancyTab.active .fa 
+	{
+	  	color: #ff4514;
+	}
+	.fancyTab a:focus 
+	{
+		outline:none;
+	}
+	.fancyTabContent 
+	{
+	  	border-color: transparent;
+	  	box-shadow: 0 -2px 0 -1px #fff, 0 0 0 1px #ddd;
+	  	padding: 30px 15px 15px;
+	  	position:relative;
+	  	background-color:#fff;
+	}
+	.nav-tabs > li.fancyTab.active > a, 
+	.nav-tabs > li.fancyTab.active > a:focus,
+	.nav-tabs > li.fancyTab.active > a:hover 
+	{
+		border-width:0;
+		color: #ff4514;
+	}
+	.nav-tabs > li.fancyTab:hover 
+	{
+		background-color:#fff;
+		box-shadow: 0 0 0 1px #ddd;
+	}
+	.nav-tabs > li.fancyTab.active:hover 
+	{
+	  	background-color:#fff;
+	  	box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+	}
+	.nav-tabs > li.fancyTab:hover a 
+	{
+		border-color:transparent;
+	}
+	.nav.nav-tabs .fancyTab a[data-toggle="tab"] 
+	{
+	  	background-color:transparent;
+	  	border-bottom:0;
+	}
+	.nav-tabs > li.fancyTab:hover a 
+	{
+	  	border-right: 1px solid transparent;
+	}
+	.nav-tabs > li.fancyTab > a 
+	{
+		margin-right:0;
+		border-top:0;
+	  	padding-bottom: 30px;
+	  	margin-bottom: -30px;
+	}
+	.nav-tabs > li.fancyTab 
+	{
+		margin-right:0;
+		margin-bottom:0;
+	}
+	.nav-tabs > li.fancyTab:last-child a 
+	{
+	  	border-right: 1px solid transparent;
+	}
+	.nav-tabs > li.fancyTab.active:last-child 
+	{
+	  	border-right: 0px solid #ddd;
+		box-shadow: 0px 2px 0 0px #fff, 0px 0px 0 1px #ddd;
+	}
+	.fancyTab:last-child 
+	{
+	  	box-shadow: 0 0 0 1px #ddd;
+	}
+	.tabs .nav-tabs li.fancyTab.active a 
+	{
+		box-shadow:none;
+	  	top:0;
+	}
+	.fancyTab.active 
+	{
+	  	background: #fff;
+		box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+	  	padding-bottom:30px;
+	}
+	.arrow-down 
+	{
+		display:none;
+	  	width: 0;
+	  	height: 0;
+	  	border-left: 20px solid transparent;
+	  	border-right: 20px solid transparent;
+	  	border-top: 22px solid #ddd;
+	  	position: absolute;
+	  	top: -1px;
+	  	left: calc(50% - 20px);
+	}
+	.arrow-down-inner 
+	{
+	  	width: 0;
+	  	height: 0;
+	  	border-left: 18px solid transparent;
+	  	border-right: 18px solid transparent;
+	  	border-top: 12px solid #fff;
+	  	position: absolute;
+	  	top: -22px;
+	  	left: -18px;
+	}
+	.fancyTab.active .arrow-down 
+	{
+	  	display: block;
+	}
+	@media (max-width: 1200px) 
+	{
+	  .fancyTab .fa 
+	  {
+	  	font-size: 36px;
+	  }
+	  .fancyTab .hidden-xs 
+	  {
+	    font-size:22px;
+	  }
+	}
+	@media (max-width: 992px) 
+	{
+	  .fancyTab .fa 
+	  {
+	  	font-size: 33px;
+	  }
+	  .fancyTab .hidden-xs 
+	  {
+	  	font-size:18px;
+	    font-weight:normal;
+	  }
+	}
+	@media (max-width: 768px) 
+	{
+	  .fancyTab > a 
+	  {
+	    font-size:18px;
+	  }
+	  .nav > li.fancyTab > a 
+	  {
+	    padding:15px 0;
+	    margin-bottom:inherit;
+	  }
+	  .fancyTab .fa 
+	  {
+	    font-size:30px;
+	  }
+	  .nav-tabs > li.fancyTab > a 
+	  {
+	    border-right:1px solid transparent;
+	    padding-bottom:0;
+	  }    
+	  .fancyTab.active .fa 
+	  {
+	    color: #333;
+	  }
+	}
+
+	/* Style Timeline ------------------------------------------------------------------ */
+	/* Style by mylastof modified by Emeric Hochart ------------------------------------ */
+	ul.timeline 
+	{
+    	list-style-type: none;
+    	position: relative;
+	}
+	ul.timeline:before 
+	{
+    	content: ' ';
+    	background: #ff4514;
+    	display: inline-block;
+    	position: absolute;
+    	left: 29px;
+    	width: 2px;
+    	height: 100%;
+    	z-index: 400;
+	}
+	ul.timeline > li 
+	{
+    	margin: 20px 0;
+    	padding-left: 20px;
+	}
+	ul.timeline > li:before 
+	{
+    	content: ' ';
+    	background: white;
+    	display: inline-block;
+    	position: absolute;
+    	border-radius: 50%;
+    	border: 3px solid #ff4514;
+    	left: 20px;
+    	width: 20px;
+    	height: 20px;
+    	z-index: 400;
+	}
+
     </style>
 </head>
 
@@ -104,31 +397,43 @@
   
   <div class="container-fluid">
 
-    <!-- Navigation : Logo+réseaux sociaux+menu -->
-    <nav id="navigation" class="row">
-    <!-- logo -->
-    <div>
-    	<img class="img-responsive" src="img/logo-filmpleinair.png" />
-    </div>
-	<!-- Réseaux sociaux -->
-	<div>	
-		<a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-  		<a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
-  	</div>
-  	<!-- Menu -->
-	<div>
-		Menu
-	</div>
+    <!-- Navigation -->
+    <nav id="navigation" class="row navbar navbar-inverse navbar-fixed-top well">
+	    <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      	</button>
+	    	<!-- Logo -->
+	    	<a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo-filmpleinair.png" /></a>
+		</div>
+	  	<div class="collapse navbar-collapse" id="myNavbar">
+			<!-- Menu -->
+	  		<ul class="nav navbar-nav navbar-right">
+				<li class="active"> <a href="#">Accueil</a> </li>
+				<li> <a href="#films">Films</a> </li>
+			    <li> <a href="#actus">Actualités</a> </li>
+			    <li> <a href="#pied">Contact</a> </li>
+			</ul>
+			<!-- Réseaux sociaux -->
+			<ul class="nav navbar-nav hidden-xs">
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		  		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		  		<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		  		<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+		  		<li><a href="#"><i class="fa fa-spotify"></i></a></li>
+			</ul>
+		</div>
 	</nav>
     
-    <!-- Header : Présentation Logo+titre+slogan -->
+    <!-- Entête -->
     <header id="entete" class="row">
-    	<p>Header</p> 
     	<i class="glyphicon glyphicon-calendar"></i> 5-8 Août 2019 | <i class="glyphicon glyphicon-map-marker"></i>Parc Monceau, Paris</p> 
-    	<p>(Logo, titre, slogan)</p>
+    	<p>
+    		<h1>Festival des Films de Plein Air</h1>
+    		<h2>Entrée Libre et Gratuite</h2>
+    	</p>
     </header>
 
     <!-- OPTION : COMPTE A REBOURS-->  
@@ -136,26 +441,278 @@
     
   <div class="container">
 
-    <!-- Films : Programmation et réservation -->
+    <!-- Films -->
     <section id="films" class="row">
-      <article class="col-md-offset-2 col-md-8">Films</article>
+      	<div class="col-md-offset-1 col-md-10">
+		<div class="tabs t-tabs">
+        	<ul class="nav nav-tabs fancyTabs" role="tablist">
+                    <li class="tab fancyTab active">
+                    	<div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>5 Août</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    <li class="tab fancyTab">
+                    	<div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>6 Août</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>7 Août</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>8 Août</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+            </ul>
+        	<div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                	<div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                           	<div class="row">
+                                <div class="col-md-12">
+                        			<ul id="5aoutaccordeon" class="timeline">
+										<li class="panel panel-default">
+											
+													<h4>17H00</h4>
+													<div class="panel-heading"> 
+														<a href="#5aoutheure1" data-parent="#5aoutaccordeon" data-toggle="collapse"> Persépolis </a>
+													</div>
+													<div id="5aoutheure1" class="panel-collapse collapse in">
+														<div class="panel-body">
+														<img src="img/affiche1.jpg" />
+														MARJAN SATRAPI NOUS RACONTE SA RÉVOLUTION IRANIENNE. - En 1978, Marjane a 8 ans et vit à Téhéran. Elle s'émerveille du monde et rêve de sauver le monde. Lorsque la République islamique s'installe, ses parents l'envoient en Autriche pour la sauver, la jeune fille ayant des idées bien arrêtées. Elle y vivra une nouvelle révolution, celle de la liberté et de l'amour. Persepolis est un film animé autobiographique réalisé à partir de la BD du même nom de la réalisatrice franco-iranienne Marjane Satrapi. Le film a soulevé de nombreuses polémiques à sa sortie et a été interdit dans plusieurs pays dont le Liban et censuré en Iran. </div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>20h00</h4>
+													<div class="panel-heading"> 
+														<a href="#5aoutheure2" data-parent="#5aoutaccordeon" data-toggle="collapse"> Polisse </a> 
+													</div>
+													<div id="5aoutheure2" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche2.jpg" />
+														LEUR MISSION, PROTÉGER LES AUTRES. MAIS SE PROTÈGENT-ILS EUX-MÊMES ? - Prix du Jury au festival de Cannes 2011, Polisse est un film choc qui met en scène des policiers de la BPM et leur combat pour protéger l'enfance. Maiwenn filme façon quasi documentaire et sa caméra se heurte à ses personnages ainsi qu'à la violence de leur quotidien. Humain, poignant et très réaliste, ce drame social captive par son énergie et ses acteurs plus vrais que nature. </div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>23h00</h4>
+													<div class="panel-heading"> 
+														<a href="#5aoutheure3" data-parent="#5aoutaccordeon" data-toggle="collapse"> La Haine </a> 
+													</div>
+													<div id="5aoutheure3" class="panel-collapse collapse">
+														<div class="panel-body"> 
+														<img src="img/affiche3.jpg" />
+														JUSQU'ICI TOUT VA BIEN - Inspiré d'une véritable bavure policière, La Haine raconte la journée d'une bande de jeunes de banlieue qui errent après l'agression de leur copain par un policier. En noir et blanc, Kassovitz dresse un portrait violent et enragé d'une banlieue délaissée. Prix de la mise en scène au festival de Cannes 1995 mais aussi César du meilleur film, ce drame marque les générations par son réalisme sans fard et poignant.</div>
+													</div>
+											
+										</li>
+									</ul>
+								</div>
+							</div>
+					</div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	<div class="col-md-12">
+                        			<ul id="6aoutaccordeon" class="timeline">
+										<li class="panel panel-default">
+											
+													<h4>17H00</h4>
+													<div class="panel-heading"> 
+														<a href="#6aoutheure1" data-parent="#6aoutaccordeon" data-toggle="collapse"> Le Concert </a> 
+													</div>
+													<div id="6aoutheure1" class="panel-collapse collapse in">
+														<div class="panel-body">
+														<img src="img/affiche4.jpg" />
+														A l'époque de Brejnev, dans les années 1960-1980, Andrei est reconnu comme l'un des meilleurs chefs d'orchestre du régime soviétique et est à la tête de l'Orchestre du Bolchoï. Mais après avoir refusé de renvoyer ses musiciens juifs, dont son meilleur ami Sacha, Andrei est licencié. Trente ans plus tard, alors qu'il travaille comme homme de ménage au Bolchoï, il saute sur l'opportunité qui s'offre à lui et vole l'invitation pour le théâtre du Châtelet. Avec ses anciens musiciens, Andrei se lance alors dans une folle aventure. Entre passé et présent, Le concert raconte l'histoire bouleversante d'un destin brisé par un régime abusif et tyrannique. </div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>20h00</h4>
+													<div class="panel-heading"> 
+														<a href="#6aoutheure2" data-parent="#6aoutaccordeon" data-toggle="collapse"> De rouille et d'os </a> 
+													</div>
+													<div id="6aoutheure2" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche5.jpg" />
+														OINGS D'ACIER. JAMBES EN CRISTAL. - Adapté d'un recueil de nouvelles de Craig Davidson, auteur américain controversé, De rouille et d'os, drame profond de Jacques Audiard, est une ode au courage, à la ténacité, au deuil et à l'entraide. Il raconte les destins croisés de Stéphanie, une jeune dresseuse d'orques qui perd ses deux jambes à la suite d'un accident et d'Ali, père d'un petit garçon de 5 ans, pauvre et paumé. Séparément, ils ne sont rien, mais ensemble, ils peuvent soulever des montagnes.</div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>23h00</h4>
+													<div class="panel-heading"> 
+														<a href="#6aoutheure3" data-parent="#6aoutaccordeon" data-toggle="collapse"> Deux jours à tuer </a> 
+													</div>
+													<div id="6aoutheure3" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche6.jpg" />
+														Antoine, quarantenaire, a une vie comblée par sa merveille femme, ses deux enfants et des amis de confiance. Il vit avec sa famille dans une belle maison et ne manque de rien. Mais un jour, sans crier gare, cet homme pourtant si heureux en apparence, décide de casser sa routine et de renverser la vapeur afin de saboter son bonheur... Ce drame romantique, porté par Albert Dupontel, nous montre que bien souvent, le bonheur ne tient qu'à un fil... </div>
+													</div>
+											
+										</li>
+									</ul>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<ul id="7aoutaccordeon" class="timeline">
+										<li class="panel panel-default">
+											
+													<h4>17H00</h4>
+													<div class="panel-heading"> 
+														<a href="#7aoutheure1" data-parent="#7aoutaccordeon" data-toggle="collapse"> Un prophète </a> 
+													</div>
+													<div id="7aoutheure1" class="panel-collapse collapse in">
+														<div class="panel-body">
+														<img src="img/affiche7.jpg" />
+														ENFER CARCERAL - Lauréat du Grand prix au festival de Cannes 2009, Un Prophète est un film choc et réaliste sur l'horreur des prisons en France. Jacques Audiard révèle Tahar Rahim au grand public, bouleversant en jeune détenu qui tente de s'imposer dans un monde carcéral dangereux. Ce drame policier poignant est aussi récompensé par plusieurs Césars (neuf en tout), dont celui du meilleur film.</div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>20h00</h4>
+													<div class="panel-heading"> 
+														<a href="#7aoutheure2" data-parent="#7aoutaccordeon" data-toggle="collapse"> Mammuth </a> 
+													</div>
+													<div id="7aoutheure2" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche8.jpg" />
+														Lorsqu'arrivé à l'âge de la retraite, Serge Pilardosse se rend compte qu'il lui manque des points à cause d'oublis de certains employeurs, il décide d'enfourcher sa "Mammut" des années 1970 et partir à la recherche de ses bulletins de salaire, mais également de son passé. Porté par Gérard Depardieu, Mammuth est une comédie drôle, déjantée, engagée et mélancolique.</div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>23h00</h4>
+													<div class="panel-heading"> 
+														<a href="#7aoutheure3" data-parent="#7aoutaccordeon" data-toggle="collapse"> 8 Femmes </a> 
+													</div>
+													<div id="7aoutheure3" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche9.jpg" />
+														8 femmes, comédie policière efficace de François Ozon, adaptée de la pièce de théâtre éponyme, est porté par un casting uniquement féminin et chaque actrice interprète une chanson de variétés françaises. Dans les années 1950, le maître de maison d'une grande demeure est assassiné peu avant Noël et la coupable se cache parmi une des huit femmes qui fréquentait régulièrement la victime et la demeure. A coup de disputes, de révélations et de trahisons, une enquête est menée... </div>
+													</div>
+											
+										</li>
+									</ul>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    	<div class="row">
+                        		<div class="col-md-12">
+                        			<ul id="8aoutaccordeon" class="timeline">
+										<li class="panel panel-default">
+											
+													<h4>17H00</h4>
+													<div class="panel-heading"> 
+														<a href="#8aoutheure1" data-parent="#8aoutaccordeon" data-toggle="collapse"> Tomboy </a> 
+													</div>
+													<div id="8aoutheure1" class="panel-collapse collapse in">
+														<div class="panel-body">
+														<img src="img/affiche10.jpg" />
+														LORSQUE GARÇON MANQUÉ SIGNIFIE IDENTITÉ ASSUMÉE. - Michael a 10 ans. Il vient d'emménager dans un nouveau quartier, et devient ami avec Lisa et sa bande. Durant l'été, il tombe amoureux de Lisa, et fait tout pour attirer son attention. Mais il y a un problème dans tout ça. En fait, Michael s'appelle Laure, et est une petite fille qui ne s'assume pas dans ce corps étranger, au grand dam de sa mère. Par la réalisatrice de La Naissance des pieuvres (Céline Sciamma) et dans la même lignée, TomBoy est un drame poignant et émouvant, qui traite avec justesse d'un sujet encore tabou aujourd'hui, l'identité sexuelle. </div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>20h00</h4>
+													<div class="panel-heading"> 
+														<a href="#8aoutheure2" data-parent="#8aoutaccordeon" data-toggle="collapse"> Welcome </a> 
+													</div>
+													<div id="8aoutheure2" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche11.jpg" />
+														Simon, maître nageur, est entrain de perdre sa femme. Afin de l'impressionner et la reconquérir, il décide, en secret, d'aider un jeune réfugié kurde, qui veut traverser la Manche à la nage pour rejoindre l'Angleterre. Drame poignant et bouleversant, Welcome retrace avec réalisme le quotidien de ces réfugiés, qui, désireux de rejoindre l'Angleterre, se retrouvent coincés à Calais. </div>
+													</div>
+											
+										</li>
+										<li class="panel panel-default">
+											
+													<h4>23h00</h4>
+													<div class="panel-heading"> 
+														<a href="#8aoutheure3" data-parent="#8aoutaccordeon" data-toggle="collapse"> Des hommes et des dieux </a> 
+													</div>
+													<div id="8aoutheure3" class="panel-collapse collapse">
+														<div class="panel-body">
+														<img src="img/affiche12.jpg" />
+														POUR EUX, AVOIR LA FOI, C'EST NE PAS AVOIR PEUR. - Dans les années 1990, 8 moines chrétiens vivent en paix et harmonie avec leurs voisins musulmans. Mais lorsqu’une équipe de travailleurs étrangers est tuée par un groupe islamiste, un climat de terreur s'installe. Contre toute attente, les moines refusent la protection de l'armée et continuent d'avoir foi en leur religion et en celle de leurs "frères" musulmans. Librement inspiré de la vie des Moines Cisterciens de Tibhirine en Algérie de 1993, Des hommes et des dieux, Grand Prix du au Festival de Cannes, est un drame historique poignant, contemplatif et épuré qui offre une réflexion intemporelle et universelle sur la religion et l'humanité. </div>
+													</div>
+											
+										</li>
+									</ul>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+		</div>
+  	  	</div>
     </section>  
 
     <!-- Actualités du plus récent aux plus vieux -->
     <section id="actus" class="row">
-      <article class="col-sm-6 col-md-4">Actualité 1</article>
-      <article class="hidden-xs col-sm-6 col-md-4">Actualité 2</article>
-      <article class="hidden-xs hidden-sm col-md-4">Actualité 3</article>
-    </section>
-
-    <!-- Partenaires : sous forme d'images avec lien -->
-    <section id="partenaires" class="row">
-      <article class="col-xs-6 col-sm-4 col-md-3">Image Partenaire 1</article>
-      <article class="col-xs-6 col-sm-4 col-md-3">Image Partenaire 2</article>
-      <article class="hidden-xs col-sm-4 col-md-3">Image Partenaire 3</article>
-      <article class="hidden-xs hidden-sm col-md-3">Image Partenaire 4</article>
+      <article class="col-sm-6 col-md-4">
+      	<div>
+      			<img class="img-responsive d-inline-block" src="img/icone-actu-01.png" alt=""/>
+                <div>
+                  <p class="small">13/10/2018</p>
+                  <h4>Actualité 1</h4>
+                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                </div>
+        </div>
+  	  </article>
+      <article class="hidden-xs col-sm-6 col-md-4">
+      	<div>
+      			<img class="img-responsive d-inline-block" src="img/icone-actu-02.png" alt=""/>
+                <div>
+                  <p class="small">13/10/2018</p>
+                  <h4>Actualité 2</h4>
+                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                </div>
+        </div>
+      </article>
+      <article class="hidden-xs hidden-sm col-md-4">
+      	<div>
+      			<img class="img-responsive d-inline-block" src="img/icone-actu-03.png" alt=""/>
+                <div>
+                  <p class="small">13/10/2018</p>
+                  <h4>Actualité 3</h4>
+                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                </div>
+        </div>
+      </article>
     </section>
   </div>
+
+<div class="container-fluid">
+    <!-- Partenaires : sous forme d'images avec lien -->
+    <section id="partenaires" class="row">
+      <article class="col-xs-6 col-sm-4 col-md-3">
+      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
+      </article>
+      <article class="col-xs-6 col-sm-4 col-md-3">
+      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
+      </article>
+      <article class="hidden-xs col-sm-4 col-md-3">
+      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
+      </article>
+      <article class="hidden-xs hidden-sm col-md-3">
+      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
+      </article>
+    </section>
+</div>
   
   <div class="container-fluid">
   	
@@ -173,11 +730,47 @@
             Mentions légales - Politique de confidentialités
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4">
-            Formulaire de Contact
+            <form class="form-horizontal">
+				<fieldset>
+				<!-- Form Name -->
+				<legend>Contact</legend>
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="textinput">Votre Nom</label>  
+				  <div class="col-md-4">
+				  <input id="textinput" name="textinput" placeholder="votre nom" class="form-control input-md" required="" type="text">
+				  <span class="help-block">Merci d'indiquer votre nom</span>  
+				  </div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="textinput">Votre Courriel</label>  
+				  <div class="col-md-4">
+				  <input id="textinput" name="textinput" placeholder="adresse@email.com" class="form-control input-md" required="" type="text">
+				  <span class="help-block">Merci d'indiquer votre courriel</span>  
+				  </div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="textinput">Objet</label>  
+				  <div class="col-md-4">
+				  <input id="textinput" name="textinput" placeholder="votre sujet" class="form-control input-md" type="text">
+				  </div>
+				</div>
+				<!-- Textarea -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="textarea">Votre Message</label>
+				  <div class="col-md-4">                     
+				    <textarea class="form-control" id="textarea" name="textarea">votre texte ...</textarea>
+				  </div>
+				</div>
+				</fieldset>
+			</form>
         </div>  
     </footer>  
   
   </div>
+
 
   <!-- SCRIPT -->
 
