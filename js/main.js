@@ -1,3 +1,87 @@
+/* Scrolling Navbar */
+function verifmedia(largeur) {
+    if (largeur.matches) { // If media query matches
+        $('nav').addClass('black');
+        
+    } else {
+        $('nav').removeClass('black');
+        
+    }
+}
+
+var largeur = window.matchMedia("(max-width: 768px)");
+verifmedia(largeur);
+largeur.addListener(verifmedia); 
+
+$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+            	    $('nav').addClass('black');
+            }
+
+            else {
+                  
+					var largeur = window.matchMedia("(max-width: 768px)");
+					verifmedia(largeur);
+					largeur.addListener(verifmedia);
+					
+                  
+                  
+            }
+      })
+
+/* Navigation fluide */
+$(function () {
+
+  $('#monmenu li a').on('click', function(e) {
+
+    e.preventDefault();
+
+    var hash = this.hash;
+
+    $('html, body').animate({
+
+      scrollTop: $(this.hash).offset().top
+
+    }, 1000, function(){
+
+      window.location.hash = hash;
+
+    });
+
+  });
+
+});
+
+/* Formulaire Réservation modal */
+$(function(){
+
+        $("form").submit(function(e) {
+
+          e.preventDefault();
+
+          var $form = $(this);
+
+          $.post($form.attr("action"), $form.serialize())
+
+          .done(function(data) {
+
+            $("#boutonreservation").html(data);
+
+            $("#reservation").modal("hide"); 
+
+          })
+
+          .fail(function() {
+
+            alert("Les données seront traitées");
+
+          });
+
+        });
+
+      });
+
+
 /* Code de la section Films */
 $(document).ready(function() {
   

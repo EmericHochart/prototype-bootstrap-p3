@@ -58,75 +58,279 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
   <!-- Style Temporaire-->
   <style>
-     body 
-     {
-        padding-top: 60px;
-     }
-     section
-     {
+    body 
+    {
+        padding-top: 0px;
+    }
+    section
+    {
      	margin: auto;
      	padding: 80px 0;
-     }
-     
-     #navigation
-     {
-     	background-color: #212121;
+    }
+    /* Style des liens ----------------------------------------------------------------------- */
+	a:link 
+	{
+	    color: #DB0000;
+	}
+	a:visited 
+	{
+	    color: #ff4514;
+	}
+	a:hover 
+	{
+	    color: #ff4514;
+	}
+	a:active 
+	{
+	    color: #ff4514;
+	} 
+	/* Style des îcones réseaux ---------------------------------------------------------------- */
+	.iconereseaux>li>a 
+	{
+    
+    color: #fff;
+	}
+	.iconereseaux>li>a:hover
+	{
+    
+    color: #db0000;
+	}
+    /* Effet sur Nav ----------------------------------------------------------------------- */
+    #intro
+    {
+    	background-image: url(img/header-festival.jpg);
+      	background-position: center;
+      	height: 800px;
+    }
+    #intro>nav
+    {
+    	background: rgba(0, 0, 0, 0);
+    	transition: 1s;
+    	border-color: transparent;
+    }
+    #intro>nav.black
+    {
+    	background-color: #212121;
+    	border-color: #DB0000;
+
+    }
+    /* Style Menu ----------------------------------------------------------------------- */
+
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover 
+    {
+    color: #db0000;
+    background-color: #212121;
+    font-weight: bold;
+	}
+    /* Style des Sections ----------------------------------------------------------------------- */
+    #navigation
+    {
      	color: white;
-     }
-     #entete 
-     {
-      background-image: url(img/header-festival.jpg);
-      background-position: center;
-      height: 800px;
-      line-height: 40px;
-      text-align: center;
-      color: white;
-     }
-     #films
-     {
-     	height: auto;
+    }
 
-     }
-     #actus
-     {
+    #entete 
+    {
+      	line-height: 40px;
+      	text-align: center;
+      	color: white;
+      	padding-top: 70px
+    }
+    #films
+    {
      	height: auto;
-     }
-     #partenaires
-     {
-       	background-image: url(img/parc-monceau.jpg);
-     	background-attachment: fixed;
-     	position: relative;
-    	background-size: cover;
-     }
-     #pied
-     {
-      background-color: #191919;
-     }
-
-     .well 
-     {
+    }
+    #actus
+    {
+     	height: auto;
+    }
+    #pied
+    {
+      	padding-top: 30px;
+      	background-color: #191919;
+      	color: #d8d8d8;
+    }
+    #pied strong
+    {
+    	color: white;
+    }
+    .well 
+    {
         padding-bottom: 15px;
         padding-right: 20px;
         padding-top: 0px;
         padding-left: 0px;
-      }
-     .panel-default>.panel-heading 
-    {
-       background-color: #fff;
-       border-color: #fff;
     }
-
+    /* Style des panneaux ----------------------------------------------------------------------- */
+    .panel-default>.panel-heading 
+    {
+    	background-color: #fff;
+       	border-color: #fff;
+    }
+    
+    /* Style des boutons ----------------------------------------------------------------------- */
+    .btn-info
+    {
+    	color: #ffffff;
+    	background-color: #DB0000;
+    	border-color: #ff4514;
+    }
+    .btn-primary
+    {
+    	color: #ffffff;
+    	background-color: #DB0000;
+    	border-color: #ff4514;
+    }
+    .btn-primary:focus
+    {
+    	color: #ffffff;
+    	background-color: #ff4514;
+    	border-color: #ff4514;
+    }
+    .btn-primary:link
+    {
+    	color: #ffffff;
+    	background-color: #DB0000;
+    	border-color: #ff4514;
+    }
+    .btn-primary:visited
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    .btn-primary:hover
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    .btn-primary:active
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    .btn-info:link
+    {
+    	background-color: #DB0000;
+    	border-color: #ff4514;
+    }
+    .btn-info:visited
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    .btn-info:hover
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    .btn-info:active
+    {
+    	background-color: #ff4514;
+    	border-color: #ff4514; 
+    }
+    
+    /* Superposition texte logo ----------------------------------------------------- */
+    div.logonav
+    {
+    	text-align: center;
+    	text-transform: uppercase;
+    }
+	div.logonav>h1 
+	{
+		position: relative;
+		color: #DB0000;
+		font-size: 2em;
+		top: -25px
+	} 
+	div.logonav>h2 
+	{
+		position: relative;
+		top: -65px;
+		color: #ffffff;
+		font-size: 1em;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+	div.logofooter
+    {
+    	text-transform: uppercase;
+    	padding-bottom: 0px;
+    	margin-bottom: -50px;
+    }
+	div.logofooter>h1 
+	{
+		position: relative;
+		color: #DB0000;
+		font-size: 2em;
+		top: -25px
+	} 
+	div.logofooter>h2 
+	{
+		position: relative;
+		top: -63px;
+		color: #ffffff;
+		font-size: 1em;
+		font-weight: bold;
+		margin-left: -5px;
+	}
+	h1.logoheader
+	{
+		color: #DB0000;
+		font-size: 6em;
+	} 
+	h2.logoheader 
+	{
+		position: relative;
+		top: -72px;
+		color: #ffffff;
+		font-size: 3em;
+		font-weight: bold;
+		margin-left: 5px;
+		text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+	}
+	h1.logoheaderxs
+	{
+		color: #DB0000;
+		font-size: 4em;
+	} 
+	h2.logoheaderxs
+	{
+		position: relative;
+		top: -55px;
+		color: #ffffff;
+		font-size: 2em;
+		font-weight: bold;
+		margin-left: 5px;
+		text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+	}
+	
+	/* Style des Films ----------------------------------------------------------------------- */
+	.affiche
+	{
+		float: left;
+		text-align: justify;
+		margin: auto;
+		padding: auto;
+	}
+	/* Style des images à la Une ------------------------------------------------------------- */
+	.modal-body>img
+	{
+		padding: 0px 20px 20px 0px;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto
+	}
 	/* Style Tab ----------------------------------------------------------------------- */
 	/* Style by Richard Gonyeau modified by Emeric Hochart ----------------------------- */
 
-	h1, h2, h3, h4, h5, h6 
+	h3, h4, h5, h6 
 	{
-	  font-family: 'Source Sans Pro';
-	  font-weight:700;
+	  	font-family: 'Source Sans Pro';
+	  	font-weight:700;
 	}
 
 	.fancyTab 
@@ -358,7 +562,7 @@
 	ul.timeline:before 
 	{
     	content: ' ';
-    	background: #ff4514;
+    	background: #9b9b9b;
     	display: inline-block;
     	position: absolute;
     	left: 29px;
@@ -374,78 +578,201 @@
 	ul.timeline > li:before 
 	{
     	content: ' ';
-    	background: white;
+    	background: #db0000;
     	display: inline-block;
     	position: absolute;
     	border-radius: 50%;
-    	border: 3px solid #ff4514;
+    	border: 3px solid #db0000;
     	left: 20px;
     	width: 20px;
     	height: 20px;
     	z-index: 400;
 	}
 
+
+	/* Style Slider Partenaires -------------------------------------------------------- */
+	/* Style by Jack Oliver modified by Emeric Hochart --------------------------------- */
+
+	@keyframes scroll {
+	  0% {
+	    transform: translateX(0);
+	  }
+	  100% {
+	    transform: translateX(calc(-250px * 7));
+	  }
+	}
+	.slider {
+	  background: white;
+	  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	  height: 198px;
+	  margin: auto;
+	  overflow: hidden;
+	  position: relative;
+	  width: 100%;
+	}
+	.slider::before, .slider::after {
+	  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	  content: "";
+	  height: 100px;
+	  position: absolute;
+	  width: 200px;
+	  z-index: 2;
+	}
+	.slider::after {
+	  right: 0;
+	  top: 0;
+	  transform: rotateZ(180deg);
+	}
+	.slider::before {
+	  left: 0;
+	  top: 0;
+	}
+	.slider .slide-track {
+	  animation: scroll 40s linear infinite;
+	  display: flex;
+	  width: calc(250px * 14);
+	}
+	.slider .slide {
+	  height: 100px;
+	  width: 250px;
+	}
+	
+
+
     </style>
 </head>
 
-<body>
+<body id="accueil" data-spy="scroll" data-target=".navbar">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Contenu du site ICI -->
   
-  <div class="container-fluid">
-
+  <div id="intro" class="container-fluid">
     <!-- Navigation -->
     <nav id="navigation" class="row navbar navbar-inverse navbar-fixed-top well">
 	    <div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#maNavbar">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>                        
 	      	</button>
 	    	<!-- Logo -->
-	    	<a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo-filmpleinair.png" /></a>
+	    	<a class="navbar-brand" href="#">
+	    		<div class="logonav">
+	    			<h1>FESTIVAL</h1>
+    				<h2>FILMS DE PLEIN AIR</h2>
+    			</div>
+    		</a>
 		</div>
-	  	<div class="collapse navbar-collapse" id="myNavbar">
+	  	<div class="collapse navbar-collapse" id="maNavbar">
 			<!-- Menu -->
-	  		<ul class="nav navbar-nav navbar-right">
-				<li class="active"> <a href="#">Accueil</a> </li>
+	  		<ul id="monmenu" class="nav navbar-nav navbar-right">
+				<li class="active"> <a href="#accueil">Accueil</a> </li>
 				<li> <a href="#films">Films</a> </li>
 			    <li> <a href="#actus">Actualités</a> </li>
 			    <li> <a href="#pied">Contact</a> </li>
 			</ul>
-			<!-- Réseaux sociaux -->
-			<ul class="nav navbar-nav hidden-xs">
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		  		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		  		<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-		  		<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-		  		<li><a href="#"><i class="fa fa-spotify"></i></a></li>
-			</ul>
 		</div>
 	</nav>
-    
     <!-- Entête -->
     <header id="entete" class="row">
-    	<i class="glyphicon glyphicon-calendar"></i> 5-8 Août 2019 | <i class="glyphicon glyphicon-map-marker"></i>Parc Monceau, Paris</p> 
-    	<p>
-    		<h1>Festival des Films de Plein Air</h1>
-    		<h2>Entrée Libre et Gratuite</h2>
-    	</p>
+    	<div class="visible-sm visible-md visible-lg col-lg-12">
+	    	<p><i class="glyphicon glyphicon-calendar"></i> 5-8 Août 2019 | <i class="glyphicon glyphicon-map-marker"></i> Parc Monceau, Paris</p> 
+	    	<p>
+	    		<h1 class="logoheader">FESTIVAL</h1>
+	    		<h2 class="logoheader">FILMS DE PLEIN AIR</h2>
+	    	</p>
+	    	<p>	
+	    		<h2><strong>Entrée Libre et Gratuite</strong></h2>
+	    	</p>
+		</div>
+        <!-- Version Mobile -->
+        <div class="visible-xs col-lg-12">
+        	<p><i class="glyphicon glyphicon-calendar"></i> 5-8 Août 2019 | <i class="glyphicon glyphicon-map-marker"></i> Parc Monceau, Paris</p> 
+	    	<p>
+	    		<h1 class="logoheaderxs">FESTIVAL</h1>
+	    		<h2 class="logoheaderxs">FILMS DE PLEIN AIR</h2>
+	    	</p>
+	    	<p>	
+	    		<h3><strong>Entrée Libre et Gratuite</strong></h3>
+	    	</p>
+        </div>
     </header>
-
-    <!-- OPTION : COMPTE A REBOURS-->  
   </div>
     
   <div class="container">
-
     <!-- Films -->
     <section id="films" class="row">
       	<div class="col-md-offset-1 col-md-10">
-		<div class="tabs t-tabs">
-        	<ul class="nav nav-tabs fancyTabs" role="tablist">
+      		<!-- Réservation -->
+      		<div id="boutonreservation">
+      			<a data-toggle="modal" href="#reservation" class="btn btn-block btn-lg btn-primary"><span class="glyphicon glyphicon-film"></span> RESERVER</a>
+      		</div>
+      		<div class="modal fade" id="reservation">
+      			<div class="modal-dialog">
+      				<div class="modal-content">
+      					<div class="modal-header">
+      						<button type="button" class="close" data-dismiss="modal">&times;</button>
+      						<h4 class="modal-title">Pré-Inscription</h4>
+      					</div>
+      					<div class="modal-body">
+      						<form action="reservation.php" method="post">
+      							<div class="form-group">
+	      							<div class="input-group">
+	      								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	      								<input type="text" class="form-control" name ="nom" id="nom" placeholder="Votre nom" autofocus>
+	      							</div>
+	      							<div class="input-group">
+	      								<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	      								<input type="email" class="form-control" name="email" id="email" placeholder="Votre Email">
+	      						    </div>
+      							</div>
+      						    <div class="form-group">
+      						    	<label for="seance">Votre Séance</label>
+      						    	<select type="text" class="form-control" class="seance" id="seance">
+                                       <option selected disabled>Choisissez un film</option>
+                                       <option value="1">Persépolis | 5 Août | 17h00</option>
+                                       <option value="2">Polisse | 5 Août | 20h00</option>
+                                       <option value="3">La Haine | 5 Août | 23h00</option>
+                                       <option value="4">Le Concert | 6 Août | 17h00</option>
+                                       <option value="5">De Rouille et d'Os | 6 Août | 20h00</option>
+                                       <option value="6">Deux jours à tuer | 6 Août | 23h00</option>
+                                       <option value="7">Un prophète | 7 Août | 17h00</option>
+                                       <option value="8">Mammuth | 7 Août | 20h00</option>
+                                       <option value="9">8 Femmes | 7 Août | 23h00</option>
+                                       <option value="10">Tomboy | 8 Août | 17h00</option>
+                                       <option value="11">Welcome | 8 Août | 20h00</option>
+                                       <option value="12">Des Hommes et des Dieux | 8 Août | 23h00</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+      						    	<label for="places">Vos places</label>
+      						    	<select type="text" class="form-control" class="places" id="places">
+                                       <option selected disabled>Nombre de places à réserver</option>
+                                       <option value="1">1 place</option>
+                                       <option value="2">2 places</option>
+                                       <option value="3">3 places</option>
+                                       <option value="4">4 places</option>
+                                       <option value="5">5 places</option>
+                                       <option value="6">6 places</option>
+                                       <option value="7">7 places</option>
+                                       <option value="8">8 places</option>
+                                    </select>
+                                </div>
+				                <button type="submit" class="btn btn-default">Envoyer</button>
+				            </form>
+			            </div>
+			            <div class="modal-footer">
+				            <button class="btn btn-info" data-dismiss="modal">Annuler</button>
+				        </div>
+		            </div>
+		        </div>
+	        </div>
+	        <!-- Tabs FILMS-->
+	        <div class="tabs t-tabs">
+        		<ul class="nav nav-tabs fancyTabs" role="tablist">
                     <li class="tab fancyTab active">
                     	<div class="arrow-down"><div class="arrow-down-inner"></div></div>	
                         <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>5 Août</span></a>
@@ -466,8 +793,8 @@
                         <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-film hidden-xs"></span><span>8 Août</span></a>
                         <div class="whiteBlock"></div>
                     </li> 
-            </ul>
-        	<div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+            	</ul>
+        		<div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
                 	<div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
                            	<div class="row">
                                 <div class="col-md-12">
@@ -476,12 +803,14 @@
 											
 													<h4>17H00</h4>
 													<div class="panel-heading"> 
-														<a href="#5aoutheure1" data-parent="#5aoutaccordeon" data-toggle="collapse"> Persépolis </a>
+														<h4><a href="#5aoutheure1" data-parent="#5aoutaccordeon" data-toggle="collapse"> Persépolis </a></h4>
 													</div>
 													<div id="5aoutheure1" class="panel-collapse collapse in">
 														<div class="panel-body">
-														<img src="img/affiche1.jpg" />
-														MARJAN SATRAPI NOUS RACONTE SA RÉVOLUTION IRANIENNE. - En 1978, Marjane a 8 ans et vit à Téhéran. Elle s'émerveille du monde et rêve de sauver le monde. Lorsque la République islamique s'installe, ses parents l'envoient en Autriche pour la sauver, la jeune fille ayant des idées bien arrêtées. Elle y vivra une nouvelle révolution, celle de la liberté et de l'amour. Persepolis est un film animé autobiographique réalisé à partir de la BD du même nom de la réalisatrice franco-iranienne Marjane Satrapi. Le film a soulevé de nombreuses polémiques à sa sortie et a été interdit dans plusieurs pays dont le Liban et censuré en Iran. </div>
+														<blockquote><p class="affiche"><img src="img/affiche1.jpg" /></p>
+														<h5>MARJAN SATRAPI NOUS RACONTE SA RÉVOLUTION IRANIENNE</h5>En 1978, Marjane a 8 ans et vit à Téhéran. Elle s'émerveille du monde et rêve de sauver le monde. Lorsque la République islamique s'installe, ses parents l'envoient en Autriche pour la sauver, la jeune fille ayant des idées bien arrêtées. Elle y vivra une nouvelle révolution, celle de la liberté et de l'amour. Persepolis est un film animé autobiographique réalisé à partir de la BD du même nom de la réalisatrice franco-iranienne Marjane Satrapi. Le film a soulevé de nombreuses polémiques à sa sortie et a été interdit dans plusieurs pays dont le Liban et censuré en Iran.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -489,12 +818,14 @@
 											
 													<h4>20h00</h4>
 													<div class="panel-heading"> 
-														<a href="#5aoutheure2" data-parent="#5aoutaccordeon" data-toggle="collapse"> Polisse </a> 
+														<h4><a href="#5aoutheure2" data-parent="#5aoutaccordeon" data-toggle="collapse"> Polisse </a></h4>
 													</div>
 													<div id="5aoutheure2" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche2.jpg" />
-														LEUR MISSION, PROTÉGER LES AUTRES. MAIS SE PROTÈGENT-ILS EUX-MÊMES ? - Prix du Jury au festival de Cannes 2011, Polisse est un film choc qui met en scène des policiers de la BPM et leur combat pour protéger l'enfance. Maiwenn filme façon quasi documentaire et sa caméra se heurte à ses personnages ainsi qu'à la violence de leur quotidien. Humain, poignant et très réaliste, ce drame social captive par son énergie et ses acteurs plus vrais que nature. </div>
+														<blockquote><p class="affiche"><img src="img/affiche2.jpg" /></p>
+														<h5>LEUR MISSION, PROTÉGER LES AUTRES. MAIS SE PROTÈGENT-ILS EUX-MÊMES ?</h5>Prix du Jury au festival de Cannes 2011, Polisse est un film choc qui met en scène des policiers de la BPM et leur combat pour protéger l'enfance. Maiwenn filme façon quasi documentaire et sa caméra se heurte à ses personnages ainsi qu'à la violence de leur quotidien. Humain, poignant et très réaliste, ce drame social captive par son énergie et ses acteurs plus vrais que nature.<br>
+														<small class="pull-right">Déconseillé moins de 12 ans</small></blockquote>
+														</div>
 													</div>
 											
 										</li>
@@ -502,12 +833,14 @@
 											
 													<h4>23h00</h4>
 													<div class="panel-heading"> 
-														<a href="#5aoutheure3" data-parent="#5aoutaccordeon" data-toggle="collapse"> La Haine </a> 
+														<h4><a href="#5aoutheure3" data-parent="#5aoutaccordeon" data-toggle="collapse"> La Haine </a></h4>
 													</div>
 													<div id="5aoutheure3" class="panel-collapse collapse">
 														<div class="panel-body"> 
-														<img src="img/affiche3.jpg" />
-														JUSQU'ICI TOUT VA BIEN - Inspiré d'une véritable bavure policière, La Haine raconte la journée d'une bande de jeunes de banlieue qui errent après l'agression de leur copain par un policier. En noir et blanc, Kassovitz dresse un portrait violent et enragé d'une banlieue délaissée. Prix de la mise en scène au festival de Cannes 1995 mais aussi César du meilleur film, ce drame marque les générations par son réalisme sans fard et poignant.</div>
+														<blockquote><p class="affiche"><img src="img/affiche3.jpg" /></p>
+														<h5>JUSQU'ICI TOUT VA BIEN</h5>Inspiré d'une véritable bavure policière, La Haine raconte la journée d'une bande de jeunes de banlieue qui errent après l'agression de leur copain par un policier. En noir et blanc, Kassovitz dresse un portrait violent et enragé d'une banlieue délaissée. Prix de la mise en scène au festival de Cannes 1995 mais aussi César du meilleur film, ce drame marque les générations par son réalisme sans fard et poignant.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -523,12 +856,14 @@
 											
 													<h4>17H00</h4>
 													<div class="panel-heading"> 
-														<a href="#6aoutheure1" data-parent="#6aoutaccordeon" data-toggle="collapse"> Le Concert </a> 
+														<h4><a href="#6aoutheure1" data-parent="#6aoutaccordeon" data-toggle="collapse"> Le Concert </a></h4>
 													</div>
-													<div id="6aoutheure1" class="panel-collapse collapse in">
+													<div id="6aoutheure1" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche4.jpg" />
-														A l'époque de Brejnev, dans les années 1960-1980, Andrei est reconnu comme l'un des meilleurs chefs d'orchestre du régime soviétique et est à la tête de l'Orchestre du Bolchoï. Mais après avoir refusé de renvoyer ses musiciens juifs, dont son meilleur ami Sacha, Andrei est licencié. Trente ans plus tard, alors qu'il travaille comme homme de ménage au Bolchoï, il saute sur l'opportunité qui s'offre à lui et vole l'invitation pour le théâtre du Châtelet. Avec ses anciens musiciens, Andrei se lance alors dans une folle aventure. Entre passé et présent, Le concert raconte l'histoire bouleversante d'un destin brisé par un régime abusif et tyrannique. </div>
+														<blockquote><p class="affiche"><img src="img/affiche4.jpg" /></p>
+														<h5>A L'EPOQUE DE BREJNEV, DANS LES ANNEES 1960-1980</h5>Andrei est reconnu comme l'un des meilleurs chefs d'orchestre du régime soviétique et est à la tête de l'Orchestre du Bolchoï. Mais après avoir refusé de renvoyer ses musiciens juifs, dont son meilleur ami Sacha, Andrei est licencié. Trente ans plus tard, alors qu'il travaille comme homme de ménage au Bolchoï, il saute sur l'opportunité qui s'offre à lui et vole l'invitation pour le théâtre du Châtelet. Avec ses anciens musiciens, Andrei se lance alors dans une folle aventure. Entre passé et présent, Le concert raconte l'histoire bouleversante d'un destin brisé par un régime abusif et tyrannique.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -536,12 +871,14 @@
 											
 													<h4>20h00</h4>
 													<div class="panel-heading"> 
-														<a href="#6aoutheure2" data-parent="#6aoutaccordeon" data-toggle="collapse"> De rouille et d'os </a> 
+														<h4><a href="#6aoutheure2" data-parent="#6aoutaccordeon" data-toggle="collapse"> De rouille et d'os </a></h4> 
 													</div>
 													<div id="6aoutheure2" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche5.jpg" />
-														OINGS D'ACIER. JAMBES EN CRISTAL. - Adapté d'un recueil de nouvelles de Craig Davidson, auteur américain controversé, De rouille et d'os, drame profond de Jacques Audiard, est une ode au courage, à la ténacité, au deuil et à l'entraide. Il raconte les destins croisés de Stéphanie, une jeune dresseuse d'orques qui perd ses deux jambes à la suite d'un accident et d'Ali, père d'un petit garçon de 5 ans, pauvre et paumé. Séparément, ils ne sont rien, mais ensemble, ils peuvent soulever des montagnes.</div>
+														<blockquote><p class="affiche"><img src="img/affiche5.jpg" /></p>
+														<h5>POINGS D'ACIER, JAMBES EN CRISTAL</h5>Adapté d'un recueil de nouvelles de Craig Davidson, auteur américain controversé, De rouille et d'os, drame profond de Jacques Audiard, est une ode au courage, à la ténacité, au deuil et à l'entraide. Il raconte les destins croisés de Stéphanie, une jeune dresseuse d'orques qui perd ses deux jambes à la suite d'un accident et d'Ali, père d'un petit garçon de 5 ans, pauvre et paumé. Séparément, ils ne sont rien, mais ensemble, ils peuvent soulever des montagnes.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -549,12 +886,14 @@
 											
 													<h4>23h00</h4>
 													<div class="panel-heading"> 
-														<a href="#6aoutheure3" data-parent="#6aoutaccordeon" data-toggle="collapse"> Deux jours à tuer </a> 
+														<h4><a href="#6aoutheure3" data-parent="#6aoutaccordeon" data-toggle="collapse"> Deux jours à tuer </a></h4> 
 													</div>
 													<div id="6aoutheure3" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche6.jpg" />
-														Antoine, quarantenaire, a une vie comblée par sa merveille femme, ses deux enfants et des amis de confiance. Il vit avec sa famille dans une belle maison et ne manque de rien. Mais un jour, sans crier gare, cet homme pourtant si heureux en apparence, décide de casser sa routine et de renverser la vapeur afin de saboter son bonheur... Ce drame romantique, porté par Albert Dupontel, nous montre que bien souvent, le bonheur ne tient qu'à un fil... </div>
+														<blockquote><p class="affiche"><img src="img/affiche6.jpg" /></p>
+														<h5>PARCE QUE C'EST DANS VOS GÊNES</h5>Antoine, quarantenaire, a une vie comblée par sa merveille femme, ses deux enfants et des amis de confiance. Il vit avec sa famille dans une belle maison et ne manque de rien. Mais un jour, sans crier gare, cet homme pourtant si heureux en apparence, décide de casser sa routine et de renverser la vapeur afin de saboter son bonheur... Ce drame romantique, porté par Albert Dupontel, nous montre que bien souvent, le bonheur ne tient qu'à un fil...<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -570,12 +909,14 @@
 											
 													<h4>17H00</h4>
 													<div class="panel-heading"> 
-														<a href="#7aoutheure1" data-parent="#7aoutaccordeon" data-toggle="collapse"> Un prophète </a> 
+														<h4><a href="#7aoutheure1" data-parent="#7aoutaccordeon" data-toggle="collapse"> Un prophète </a></h4>
 													</div>
-													<div id="7aoutheure1" class="panel-collapse collapse in">
+													<div id="7aoutheure1" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche7.jpg" />
-														ENFER CARCERAL - Lauréat du Grand prix au festival de Cannes 2009, Un Prophète est un film choc et réaliste sur l'horreur des prisons en France. Jacques Audiard révèle Tahar Rahim au grand public, bouleversant en jeune détenu qui tente de s'imposer dans un monde carcéral dangereux. Ce drame policier poignant est aussi récompensé par plusieurs Césars (neuf en tout), dont celui du meilleur film.</div>
+														<blockquote><p class="affiche"><img src="img/affiche7.jpg" /></p>
+														<h5>ENFER CARCERAL</h5>Lauréat du Grand prix au festival de Cannes 2009, Un Prophète est un film choc et réaliste sur l'horreur des prisons en France. Jacques Audiard révèle Tahar Rahim au grand public, bouleversant en jeune détenu qui tente de s'imposer dans un monde carcéral dangereux. Ce drame policier poignant est aussi récompensé par plusieurs Césars (neuf en tout), dont celui du meilleur film.<br>
+														<small class="pull-right">Déconseillé moins de 12 ans</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -583,12 +924,14 @@
 											
 													<h4>20h00</h4>
 													<div class="panel-heading"> 
-														<a href="#7aoutheure2" data-parent="#7aoutaccordeon" data-toggle="collapse"> Mammuth </a> 
+														<h4><a href="#7aoutheure2" data-parent="#7aoutaccordeon" data-toggle="collapse"> Mammuth </a></h4> 
 													</div>
 													<div id="7aoutheure2" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche8.jpg" />
-														Lorsqu'arrivé à l'âge de la retraite, Serge Pilardosse se rend compte qu'il lui manque des points à cause d'oublis de certains employeurs, il décide d'enfourcher sa "Mammut" des années 1970 et partir à la recherche de ses bulletins de salaire, mais également de son passé. Porté par Gérard Depardieu, Mammuth est une comédie drôle, déjantée, engagée et mélancolique.</div>
+														<blockquote><p class="affiche"><img src="img/affiche8.jpg" /></p>
+														<h5>T’ES BELLE, T’ES BELLE A EN CREVER</h5>Lorsqu'arrivé à l'âge de la retraite, Serge Pilardosse se rend compte qu'il lui manque des points à cause d'oublis de certains employeurs, il décide d'enfourcher sa "Mammut" des années 1970 et partir à la recherche de ses bulletins de salaire, mais également de son passé. Porté par Gérard Depardieu, Mammuth est une comédie drôle, déjantée, engagée et mélancolique.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -596,12 +939,14 @@
 											
 													<h4>23h00</h4>
 													<div class="panel-heading"> 
-														<a href="#7aoutheure3" data-parent="#7aoutaccordeon" data-toggle="collapse"> 8 Femmes </a> 
+														<h4><a href="#7aoutheure3" data-parent="#7aoutaccordeon" data-toggle="collapse"> 8 Femmes </a></h4> 
 													</div>
 													<div id="7aoutheure3" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche9.jpg" />
-														8 femmes, comédie policière efficace de François Ozon, adaptée de la pièce de théâtre éponyme, est porté par un casting uniquement féminin et chaque actrice interprète une chanson de variétés françaises. Dans les années 1950, le maître de maison d'une grande demeure est assassiné peu avant Noël et la coupable se cache parmi une des huit femmes qui fréquentait régulièrement la victime et la demeure. A coup de disputes, de révélations et de trahisons, une enquête est menée... </div>
+														<blockquote><p class="affiche"><img src="img/affiche9.jpg" /></p>
+														<h5>LES PÊCHERESSES SE COMPRENNENT ENTRE ELLES</h5>8 femmes, comédie policière efficace de François Ozon, adaptée de la pièce de théâtre éponyme, est porté par un casting uniquement féminin et chaque actrice interprète une chanson de variétés françaises. Dans les années 1950, le maître de maison d'une grande demeure est assassiné peu avant Noël et la coupable se cache parmi une des huit femmes qui fréquentait régulièrement la victime et la demeure. A coup de disputes, de révélations et de trahisons, une enquête est menée...<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -617,12 +962,14 @@
 											
 													<h4>17H00</h4>
 													<div class="panel-heading"> 
-														<a href="#8aoutheure1" data-parent="#8aoutaccordeon" data-toggle="collapse"> Tomboy </a> 
+														<h4><a href="#8aoutheure1" data-parent="#8aoutaccordeon" data-toggle="collapse"> Tomboy </a></h4> 
 													</div>
-													<div id="8aoutheure1" class="panel-collapse collapse in">
+													<div id="8aoutheure1" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche10.jpg" />
-														LORSQUE GARÇON MANQUÉ SIGNIFIE IDENTITÉ ASSUMÉE. - Michael a 10 ans. Il vient d'emménager dans un nouveau quartier, et devient ami avec Lisa et sa bande. Durant l'été, il tombe amoureux de Lisa, et fait tout pour attirer son attention. Mais il y a un problème dans tout ça. En fait, Michael s'appelle Laure, et est une petite fille qui ne s'assume pas dans ce corps étranger, au grand dam de sa mère. Par la réalisatrice de La Naissance des pieuvres (Céline Sciamma) et dans la même lignée, TomBoy est un drame poignant et émouvant, qui traite avec justesse d'un sujet encore tabou aujourd'hui, l'identité sexuelle. </div>
+														<blockquote><p class="affiche"><img src="img/affiche10.jpg" /></p>
+														<h5>LORSQUE GARÇON MANQUÉ SIGNIFIE IDENTITÉ ASSUMÉE</h5>Michael a 10 ans. Il vient d'emménager dans un nouveau quartier, et devient ami avec Lisa et sa bande. Durant l'été, il tombe amoureux de Lisa, et fait tout pour attirer son attention. Mais il y a un problème dans tout ça. En fait, Michael s'appelle Laure, et est une petite fille qui ne s'assume pas dans ce corps étranger, au grand dam de sa mère. Par la réalisatrice de La Naissance des pieuvres (Céline Sciamma) et dans la même lignée, TomBoy est un drame poignant et émouvant, qui traite avec justesse d'un sujet encore tabou aujourd'hui, l'identité sexuelle.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -630,12 +977,14 @@
 											
 													<h4>20h00</h4>
 													<div class="panel-heading"> 
-														<a href="#8aoutheure2" data-parent="#8aoutaccordeon" data-toggle="collapse"> Welcome </a> 
+														<h4><a href="#8aoutheure2" data-parent="#8aoutaccordeon" data-toggle="collapse"> Welcome </a></h4> 
 													</div>
 													<div id="8aoutheure2" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche11.jpg" />
-														Simon, maître nageur, est entrain de perdre sa femme. Afin de l'impressionner et la reconquérir, il décide, en secret, d'aider un jeune réfugié kurde, qui veut traverser la Manche à la nage pour rejoindre l'Angleterre. Drame poignant et bouleversant, Welcome retrace avec réalisme le quotidien de ces réfugiés, qui, désireux de rejoindre l'Angleterre, se retrouvent coincés à Calais. </div>
+														<blockquote><p class="affiche"><img src="img/affiche11.jpg" /></p>
+														<h5>POURQUOI NE RESTES TU PAS EN FRANCE</h5>Simon, maître nageur, est entrain de perdre sa femme. Afin de l'impressionner et la reconquérir, il décide, en secret, d'aider un jeune réfugié kurde, qui veut traverser la Manche à la nage pour rejoindre l'Angleterre. Drame poignant et bouleversant, Welcome retrace avec réalisme le quotidien de ces réfugiés, qui, désireux de rejoindre l'Angleterre, se retrouvent coincés à Calais.<br>
+														<small class="pull-right">Tous publics</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
@@ -643,91 +992,201 @@
 											
 													<h4>23h00</h4>
 													<div class="panel-heading"> 
-														<a href="#8aoutheure3" data-parent="#8aoutaccordeon" data-toggle="collapse"> Des hommes et des dieux </a> 
+														<h4><a href="#8aoutheure3" data-parent="#8aoutaccordeon" data-toggle="collapse"> Des hommes et des dieux </a></h4> 
 													</div>
 													<div id="8aoutheure3" class="panel-collapse collapse">
 														<div class="panel-body">
-														<img src="img/affiche12.jpg" />
-														POUR EUX, AVOIR LA FOI, C'EST NE PAS AVOIR PEUR. - Dans les années 1990, 8 moines chrétiens vivent en paix et harmonie avec leurs voisins musulmans. Mais lorsqu’une équipe de travailleurs étrangers est tuée par un groupe islamiste, un climat de terreur s'installe. Contre toute attente, les moines refusent la protection de l'armée et continuent d'avoir foi en leur religion et en celle de leurs "frères" musulmans. Librement inspiré de la vie des Moines Cisterciens de Tibhirine en Algérie de 1993, Des hommes et des dieux, Grand Prix du au Festival de Cannes, est un drame historique poignant, contemplatif et épuré qui offre une réflexion intemporelle et universelle sur la religion et l'humanité. </div>
+														<blockquote><p class="affiche"><img src="img/affiche12.jpg" /></p>
+														<h5>POUR EUX, AVOIR LA FOI, C'EST NE PAS AVOIR PEUR</h5>Dans les années 1990, 8 moines chrétiens vivent en paix et harmonie avec leurs voisins musulmans. Mais lorsqu’une équipe de travailleurs étrangers est tuée par un groupe islamiste, un climat de terreur s'installe. Contre toute attente, les moines refusent la protection de l'armée et continuent d'avoir foi en leur religion et en celle de leurs "frères" musulmans. Librement inspiré de la vie des Moines Cisterciens de Tibhirine en Algérie de 1993, Des hommes et des dieux, Grand Prix du au Festival de Cannes, est un drame historique poignant, contemplatif et épuré qui offre une réflexion intemporelle et universelle sur la religion et l'humanité.<br>
+														<small class="pull-right">Déconseillé moins de 12 ans</small></blocquote>
+														</div>
 													</div>
 											
 										</li>
 									</ul>
                                 </div>
                         </div>
-                    </div>
-            </div>
-		</div>
+                	</div>
+            	</div>
+			</div>
   	  	</div>
     </section>  
-
-    <!-- Actualités du plus récent aux plus vieux -->
+    <!-- Actualités -->
     <section id="actus" class="row">
       <article class="col-sm-6 col-md-4">
       	<div>
-      			<img class="img-responsive d-inline-block" src="img/icone-actu-01.png" alt=""/>
+      			<a data-toggle="modal" href="#actus1"><i class="far fa-newspaper fa-5x"></i></a>
                 <div>
-                  <p class="small">13/10/2018</p>
-                  <h4>Actualité 1</h4>
-                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                  <p class="small">17/10/2018</p>
+                  <h4>Remerciement</h4>
+                  <p>Après une année de préparation et plus d’un mois d’activités, interventions, dévoilements, conférences, ateliers, balades urbaines, etc, la première édition du Festival des Films de Plein Air aura lieu cet été !</p>
+                  <button data-toggle="modal" href="#actus1" class="btn btn-primary pull-right">En lire plus...</button>
+                  <div class="modal fade" id="actus1">
+                  		<div class="modal-dialog">
+                  			<div class="modal-content">
+                  				<div class="modal-header">
+                  					<button type="button" class="close" data-dismiss="modal">&times;</button>
+                  					<h4 class="modal-title">Remerciement</h4>
+                  					<small class="pull-right">17/10/2018</small>
+                  				</div>
+								<div class="modal-body">
+									<img src="img/film_festival_parc_shutterstock_220181725.jpg" />
+									<p>Après une année de préparation et plus d’un mois d’activités, interventions, dévoilements, conférences, ateliers, balades urbaines, etc, la première édition du Festival des Films de Plein Air aura lieu cet été !</p>
+									<p>L’équipe de l’organisation tient à remercier bien sûr tous les membres du festival pour leur bonne humeur à toute épreuve, mais surtout pour leur talent ! Félicitations pour la qualité de votre travail et le temps dédié aux œuvres. Merci pour vos efforts et pour avoir continué à apporter la couleur dans notre ville avec poésie et créativité. Nous garderons un très bon souvenir de notre rencontre et des magnifiques œuvres que vous allez projetées.</p>
+									<p>Un énorme merci également à tous nos partenaires, institutionnels ou privés, pour leur implication et leur soutien à ce projet, sans qui rien ne serait possible.</p>
+									<p>Mais surtout, et bien entendu l’équipe remercie du fond du cœur tous les stagiaires, bénévoles et toutes les personnes qui nous ont aidé de manière ponctuelle quand nous étions dans l’impasse. Merci pour votre grande générosité, votre excellent service, votre disponibilité, votre compréhension et patience, et surtout votre implication dans le projet. Sans vous, relever le défi de ce festival ne serait pas possible.</p>
+									<p>À très bientôt, Jenifer Viala et toute l'équipe du Festival des Films de Plein Air</p>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-info" data-dismiss="modal">Fermer</button>
+								</div>
+							</div>	
+						</div>
+				  </div>
                 </div>
-        </div>
+      	</div>
   	  </article>
       <article class="hidden-xs col-sm-6 col-md-4">
       	<div>
-      			<img class="img-responsive d-inline-block" src="img/icone-actu-02.png" alt=""/>
+      			<a data-toggle="modal" href="#actus2"><i class="far fa-bookmark fa-5x"></i></a>
                 <div>
-                  <p class="small">13/10/2018</p>
-                  <h4>Actualité 2</h4>
-                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                  <p class="small">16/10/2018</p>
+                  <h4>Zoom sur François Ozon</h4>
+                  <p>Faute d'être plus intelligent que le film, il ne reste donc qu'à l'admirer, chose faite dès le générique. Tel les bons restaurants, où il suffit de humer une fois la porte passée pour savoir qu'on va se régaler alors que rien n'a encore rejoint l'assiette, 8 Femmes impose d'emblée sa perfection.</p>
+                  <button data-toggle="modal" href="#actus2" class="btn btn-primary pull-right">En lire plus...</button>
+                  <div class="modal fade" id="actus2">
+                  		<div class="modal-dialog">
+                  			<div class="modal-content">
+                  				<div class="modal-header">
+                  					<button type="button" class="close" data-dismiss="modal">&times;</button>
+                  					<h4 class="modal-title">Zoom sur François Ozon</h4>
+                  					<small class="pull-right">16/10/2018</small>
+                  				</div>
+								<div class="modal-body">
+									<p>Fils d'un biologiste et d'une prof de Français, François Ozon, aîné turbulent d'une famille de quatre enfants, reçoit une éducation catholique. S'il prend, adolescent, quelques cours de comédie, il s'oriente vite vers la mise en scène. Titulaire d'une maîtrise de cinéma à Paris I (avec pour enseignants Rohmer et Joseph Morder), il tourne parallèlement à ses études des dizaines de films avec la caméra super-8 de son père. Intégrant le département réalisation de la Fémis en 1990, il rédige une maîtrise sur Pialat et signe de nombreux courts-métrages. C'est d'ailleurs grâce à ses courts (dont Une robe d'été, vision décomplexée de l'homosexualité, primée à Locarno et présentée à Cannes en 1996) qu'Ozon se fera un nom au sein du jeune cinéma français.</p>
+									<p>Soutenu par la maison de production Fidélité (créée par des amis de la Fémis), il réalise en 1997 un moyen métrage, le dérangeant Regarde la mer, avant de passer au long un an plus tard avec Sitcom, jeu de massacre insolent et cruel qui se situe dans la droite lignée de ses courts-métrages. Prolifique, Ozon impose rapidement un univers très personnel, flirtant avec le fantastique (Les Amants criminels, 1999), et ne craignant pas la théâtralité - Gouttes d'eau sur pierres brûlantes, adaptation d'une pièce de Fassbinder avec Bernard Giraudeau et Ludivine Sagnier, alors inconnue. Si ses précédents longs-métrages étaient diversement accueillis, l'audacieux Ozon fait l'unanimité, auprès de la critique et du public, avec Sous le sable en 2001. Portrait d'une femme désemparée après la disparition de son mari, le film, qui marque le come-back éclatant de Charlotte Rampling, témoigne d'une science du casting qui ne se démentira pas. </p>
+									<p>Fort de ce succès, Ozon réunit le gratin du cinéma français (Deneuve, Huppert, Ardant, Béart) dans 8 femmes, whodunit kitsch et glamour, truffé de clins d’œil cinéphiles, qui triomphe au box-office.</p>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-info" data-dismiss="modal">Fermer</button>
+								</div>
+							</div>	
+						</div>
+				  </div>
                 </div>
         </div>
       </article>
       <article class="hidden-xs hidden-sm col-md-4">
       	<div>
-      			<img class="img-responsive d-inline-block" src="img/icone-actu-03.png" alt=""/>
+      			<a data-toggle="modal" href="#actus3"><i class="far fa-newspaper fa-5x"></i></a>
                 <div>
                   <p class="small">13/10/2018</p>
-                  <h4>Actualité 3</h4>
-                  <p>Le Festival vous propose chaque année une sélection de plus de 10 films d'auteurs. Tous se distinguent par une bande son exceptionnelle et des bruitages d'une très grande qualité sonore.</p>
+                  <h4>Première édition du Festival</h4>
+                  <p>Vous restez à Paris tout l’été et ça vous déprime? Le Festival des Films de Plein Air du parc Monceau est là pour vous, avec cette année une programmation très hétéroclite.</p>
+                  <button data-toggle="modal" href="#actus3" class="btn btn-primary pull-right">En lire plus...</button>
+                  <div class="modal fade" id="actus3">
+                  		<div class="modal-dialog">
+                  			<div class="modal-content">
+                  				<div class="modal-header">
+                  					<button type="button" class="close" data-dismiss="modal">&times;</button>
+                  					<h4 class="modal-title">Première édition du Festival</h4>
+                  					<small class="pull-right">13/10/2018</small>
+                  				</div>
+								<div class="modal-body">
+									<p>La programmation de cette année a tout pour plaire aux amateurs de films !</p>
+									<p>Pour cette première édition du <strong>Festival des Films de Plein Air</strong> du parc Monceau, nous débuterons le 5 Août avec une projection de Persépolis. Le film animé autobiographique réalisé à partir de la BD du même nom de la réalisatrice franco-iranienne Marjane Satrapi a soulevé de nombreuses polémiques à sa sortie et a été interdit dans plusieurs pays dont le Liban et censuré en Iran.</p>
+									<p>Le même jour, nous découvrirons également Polisse et la Haine.</p>
+									<p>Le public pourra découvrir des films de tout style et de diverses horizons. Une belle occasion de (re)découvrir ces films, et en profiter pour pique niquer sur la prairie du Parc Monceau. Date à noter également, les jours suivants du 6 Août au 8 Août, la Cinématèque Française organisera une activité sous forme de Quizz sur les plus grands auteurs du cinéma français.</p>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-info" data-dismiss="modal">Fermer</button>
+								</div>
+							</div>	
+						</div>
+				  </div>
                 </div>
         </div>
       </article>
     </section>
   </div>
 
-<div class="container-fluid">
-    <!-- Partenaires : sous forme d'images avec lien -->
-    <section id="partenaires" class="row">
-      <article class="col-xs-6 col-sm-4 col-md-3">
-      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
-      </article>
-      <article class="col-xs-6 col-sm-4 col-md-3">
-      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
-      </article>
-      <article class="hidden-xs col-sm-4 col-md-3">
-      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
-      </article>
-      <article class="hidden-xs hidden-sm col-md-3">
-      	<img class="img-responsive d-inline-block img-circle" src="img/partenaire-mairie.png" alt=""/>
-      </article>
-    </section>
-</div>
+  <div class="container-fluid">
+    <!-- Partenaires -->
+    <div class="slider row">
+		<div class="slide-track">
+			<div class="slide">
+				<img src="img/partenaire1.png" height="100" width="250" alt="partenaire1"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire2.png" height="100" width="250" alt="partenaire2"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire3.png" height="100" width="250" alt="partenaire3"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire4.png" height="100" width="250" alt="partenaire4"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire5.png" height="100" width="250" alt="partenaire5"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire6.png" height="100" width="250" alt="partenaire6"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire7.png" height="100" width="250" alt="partenaire7"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire1.png" height="100" width="250" alt="partenaire1"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire2.png" height="100" width="250" alt="partenaire2"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire3.png" height="100" width="250" alt="partenaire3"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire4.png" height="100" width="250" alt="partenaire4"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire5.png" height="100" width="250" alt="partenaire5"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire6.png" height="100" width="250" alt="partenaire6"/>
+			</div>
+			<div class="slide">
+				<img src="img/partenaire7.png" height="100" width="250" alt="partenaire7"/>
+			</div>
+		</div>
+	</div>
+  </div>
   
   <div class="container-fluid">
-  	
-  	<!-- Footer -->
+  <!-- Footer -->
     <footer id="pied" class="row">
         <div class="col-xs-6 col-sm-6 col-md-4">
-            <address>
-                <p>Association Festival Les Films de Plein Air</p>
-                <p><strong>Parc Monceau</strong><br>
-                35 Boulevard de Courcelles<br>
-                75008 Paris<br>
-            </address>
+            		<div class="logofooter">
+            			<h1>FESTIVAL</h1>
+    					<h2>FILMS DE PLEIN AIR</h2>
+    				</div>
+    				<strong>Adresse</strong>
+    				<address>
+                	<p>Association Festival Les Films de Plein Air</p>
+                	<p>Parc Monceau<br>
+                	35 Boulevard de Courcelles<br>
+                	75008 Paris<br>
+                	</address>
+                	<strong>Téléphone</strong> +33 1 25 00 00 00<br/>
+                	<strong>Email</strong> contact@festival-film-monceau.org
         </div>
         <div class="col-xs-6 col-sm-6 col-md-4">
-            Mentions légales - Politique de confidentialités
+        	<!-- Réseaux sociaux -->
+			<ul class="iconereseaux list-unstyled list-inline">
+				<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+		  		<li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+		  		<li><a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+		  		<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+		  		<li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+			</ul>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4">
             <form class="form-horizontal">
@@ -767,8 +1226,9 @@
 				</fieldset>
 			</form>
         </div>  
-    </footer>  
-  
+        <!-- A MODIFIER  -->
+        <div style="text-align: center;"><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></div>
+    </footer> 
   </div>
 
 
@@ -787,5 +1247,4 @@
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   -->
 </body>
-
 </html>
