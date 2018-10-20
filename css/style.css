@@ -1,0 +1,629 @@
+/* Styles Prototype Festival Films de Plein Air */
+
+
+    @font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+    body 
+    {
+        padding-top: 0px;
+        font-family: 'robotoregular', Arial, serif;
+    }
+    section
+    {
+        margin: auto;
+        padding: 80px 0;
+    }
+    h1, h2
+    {
+        font-family: 'open_sansregular', Arial, serif;
+    }
+    h3, h4, h5, h6 
+    {
+        font-family: 'robotoregular', Arial, serif;
+        font-weight:700;
+    }
+
+    /* Style des liens ----------------------------------------------------------------------- */
+    a:link 
+    {
+        color: #DB0000;
+    }
+    a:visited 
+    {
+        color: #9d9d9d;
+    }
+    a:hover 
+    {
+        color: #ff4514;
+    }
+    a:active 
+    {
+        color: #ff4514;
+    } 
+    /* Style des îcones réseaux ---------------------------------------------------------------- */
+    .iconereseaux
+    {
+        text-align: center;
+    }
+    .iconereseaux>li>a 
+    {
+        color: #fff;
+    }
+    .iconereseaux>li>a:hover
+    {
+        color: #db0000;
+    }
+    /* Effet sur Nav ----------------------------------------------------------------------- */
+    #intro
+    {
+        background-image: url(../img/header-festival.jpg);
+        background-position: center;
+        height: 800px;
+    }
+    #intro>nav
+    {
+        background: rgba(0, 0, 0, 0);
+        transition: 1s;
+        border-color: transparent;
+    }
+    #intro>nav.black
+    {
+        background-color: #212121;
+        border-color: #db0000;
+
+    }
+    /* Style Menu ----------------------------------------------------------------------- */
+
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover 
+    {
+    color: #db0000;
+    background-color: transparent;
+    font-weight: bold;
+    }
+    /* Style des Sections ----------------------------------------------------------------------- */
+    #navigation
+    {
+        color: white;
+    }
+
+    #entete 
+    {
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        padding-top: 70px
+    }
+    #films
+    {
+        height: auto;
+    }
+    #actus
+    {
+        height: auto;
+    }
+    .modal-body>img 
+    {
+        max-width: 100%;
+    }
+    .pagination
+    {
+        padding-top: 0px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+    .pagination>li>a, .pagination>li>span 
+    {
+    color: #db0000;
+    }
+    .pagination>li>a:hover 
+    {
+    color: #ff4514;
+    }
+    #pied
+    {
+        padding-top: 30px;
+        background-color: #191919;
+        color: white;
+    }
+    #pied strong
+    {
+        color: #db0000;
+    }
+    #pied [class*="col-"]
+    {
+        margin: 20px 0px;
+    }
+    .well 
+    {
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    /* Style des panneaux ----------------------------------------------------------------------- */
+    .panel-default>.panel-heading 
+    {
+        background-color: #fff;
+        border-color: #fff;
+    }
+    
+    /* Style des boutons ----------------------------------------------------------------------- */
+    .btn-info
+    {
+        color: #ffffff;
+        background-color: #DB0000;
+        border-color: #ff4514;
+    }
+    .btn-primary
+    {
+        color: #ffffff;
+        background-color: #DB0000;
+        border-color: #ff4514;
+    }
+    .btn-primary:focus
+    {
+        color: #ffffff;
+        background-color: #DB0000;
+        border-color: #ff4514;
+    }
+    .btn-primary:link
+    {
+        color: #ffffff;
+        background-color: #DB0000;
+        border-color: #ff4514;
+    }
+    .btn-primary:visited
+    {
+        background-color: #db0000;
+        border-color: #db0000;
+        color: #ffffff; 
+    }
+    .btn-primary:hover
+    {
+        background-color: #ff4514;
+        border-color: #ff4514; 
+    }
+    .btn-primary:active
+    {
+        background-color: #ff4514;
+        border-color: #ff4514; 
+    }
+    .btn-info:link
+    {
+        background-color: #DB0000;
+        border-color: #ff4514;
+    }
+    .btn-info:visited
+    {
+        background-color: #ff4514;
+        border-color: #ff4514; 
+    }
+    .btn-info:hover
+    {
+        background-color: #ff4514;
+        border-color: #ff4514; 
+    }
+    .btn-info:active
+    {
+        background-color: #ff4514;
+        border-color: #ff4514; 
+    }
+    
+    /* Superposition texte logo ----------------------------------------------------- */
+    div.logonav
+    {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    div.logonav>h1 
+    {
+        position: relative;
+        color: #DB0000;
+        font-size: 2em;
+        top: -25px
+    } 
+    div.logonav>h2 
+    {
+        position: relative;
+        top: -65px;
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+    div.logofooter
+    {
+        text-transform: uppercase;
+        padding-bottom: 0px;
+        margin-bottom: -50px;
+    }
+    div.logofooter>h1 
+    {
+        position: relative;
+        color: #DB0000;
+        font-size: 2em;
+        top: -25px
+    } 
+    div.logofooter>h2 
+    {
+        position: relative;
+        top: -63px;
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: -5px;
+    }
+    h1.logoheader
+    {
+        color: #DB0000;
+        font-size: 6em;
+    } 
+    h2.logoheader 
+    {
+        position: relative;
+        top: -72px;
+        color: #ffffff;
+        font-size: 3em;
+        font-weight: bold;
+        margin-left: 5px;
+        text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    }
+    h1.logoheaderxs
+    {
+        color: #DB0000;
+        font-size: 4em;
+    } 
+    h2.logoheaderxs
+    {
+        position: relative;
+        top: -55px;
+        color: #ffffff;
+        font-size: 2em;
+        font-weight: bold;
+        margin-left: 5px;
+        text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    }
+    
+    /* Style des Films ----------------------------------------------------------------------- */
+    .affiche
+    {
+        float: left;
+        text-align: justify;
+        margin: 10px 10px 10px 0px;
+        padding: auto;
+    }
+    
+    /* Style des images à la Une ------------------------------------------------------------- */
+    .modal-body>img
+    {
+        padding: 0px 20px 20px 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Style Tab ----------------------------------------------------------------------- */
+    /* Style by Richard Gonyeau modified by Emeric Hochart ----------------------------- */
+
+    .fancyTab 
+    {
+        text-align: center;
+        padding:15px 0;
+        background-color: #d8d8d8;
+        box-shadow: 0 0 0 1px #ddd;
+        top:15px;   
+        transition: top .2s;
+    }
+    .fancyTab.active 
+    {
+        top:0;
+        transition:top .2s;
+    }
+    .whiteBlock 
+    {
+        display:none;
+    }
+    .fancyTab.active .whiteBlock 
+    {
+        display:block;
+        height:2px;
+        bottom:-2px;
+        background-color:#fff;
+        width:99%;
+        position:absolute;
+        z-index:1;
+    }
+    .fancyTab a 
+    {
+        font-family: 'robotoregular', Arial, serif;
+        font-size:1.65em;
+        font-weight:300;
+        transition:.2s;
+        color:#9b9b9b;
+    }
+    /*.fancyTab .hidden-xs {
+      white-space:nowrap;
+    }*/
+    .fancyTabs 
+    {
+        border-bottom:2px solid #ddd;
+        margin: 15px 0 0;
+    }
+    li.fancyTab a
+    {
+        padding-top: 15px;
+        top:-15px;
+        padding-bottom:0;
+    }
+    li.fancyTab.active a 
+    {
+        padding-top: inherit;
+    }
+    .fancyTab .fa 
+    {
+        font-size: 40px;
+        width:100%;
+        padding: 15px 0 5px;
+        color:#9b9b9b;
+    }
+    .fancyTab.active .fa 
+    {
+        color: #ff4514;
+    }
+    .fancyTab a:focus 
+    {
+        outline:none;
+    }
+    .fancyTabContent 
+    {
+        border-color: transparent;
+        box-shadow: 0 -2px 0 -1px #fff, 0 0 0 1px #ddd;
+        padding: 30px 15px 15px;
+        position:relative;
+        background-color:#fff;
+    }
+    .nav-tabs > li.fancyTab.active > a, 
+    .nav-tabs > li.fancyTab.active > a:focus,
+    .nav-tabs > li.fancyTab.active > a:hover 
+    {
+        border-width:0;
+        color: #ff4514;
+    }
+    .nav-tabs > li.fancyTab:hover 
+    {
+        background-color:#fff;
+        box-shadow: 0 0 0 1px #ddd;
+    }
+    .nav-tabs > li.fancyTab.active:hover 
+    {
+        background-color:#fff;
+        box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+    }
+    .nav-tabs > li.fancyTab:hover a 
+    {
+        border-color:transparent;
+    }
+    .nav.nav-tabs .fancyTab a[data-toggle="tab"] 
+    {
+        background-color:transparent;
+        border-bottom:0;
+    }
+    .nav-tabs > li.fancyTab:hover a 
+    {
+        border-right: 1px solid transparent;
+    }
+    .nav-tabs > li.fancyTab > a 
+    {
+        margin-right:0;
+        border-top:0;
+        padding-bottom: 30px;
+        margin-bottom: -30px;
+    }
+    .nav-tabs > li.fancyTab 
+    {
+        margin-right:0;
+        margin-bottom:0;
+    }
+    .nav-tabs > li.fancyTab:last-child a 
+    {
+        border-right: 1px solid transparent;
+    }
+    .nav-tabs > li.fancyTab.active:last-child 
+    {
+        border-right: 0px solid #ddd;
+        box-shadow: 0px 2px 0 0px #fff, 0px 0px 0 1px #ddd;
+    }
+    .fancyTab:last-child 
+    {
+        box-shadow: 0 0 0 1px #ddd;
+    }
+    .tabs .nav-tabs li.fancyTab.active a 
+    {
+        box-shadow:none;
+        top:0;
+    }
+    .fancyTab.active 
+    {
+        background: #fff;
+        box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+        padding-bottom:30px;
+    }
+    .arrow-down 
+    {
+        display:none;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 22px solid #ddd;
+        position: absolute;
+        top: -1px;
+        left: calc(50% - 20px);
+    }
+    .arrow-down-inner 
+    {
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-top: 12px solid #fff;
+        position: absolute;
+        top: -22px;
+        left: -18px;
+    }
+    .fancyTab.active .arrow-down 
+    {
+        display: block;
+    }
+    @media (max-width: 1200px) 
+    {
+      .fancyTab .fa 
+      {
+        font-size: 36px;
+      }
+      .fancyTab .hidden-xs 
+      {
+        font-size:22px;
+      }
+    }
+    @media (max-width: 992px) 
+    {
+      .fancyTab .fa 
+      {
+        font-size: 33px;
+      }
+      .fancyTab .hidden-xs 
+      {
+        font-size:18px;
+        font-weight:normal;
+      }
+    }
+    @media (max-width: 768px) 
+    {
+      .fancyTab > a 
+      {
+        font-size:18px;
+      }
+      .nav > li.fancyTab > a 
+      {
+        padding:15px 0;
+        margin-bottom:inherit;
+      }
+      .fancyTab .fa 
+      {
+        font-size:30px;
+      }
+      .nav-tabs > li.fancyTab > a 
+      {
+        border-right:1px solid transparent;
+        padding-bottom:0;
+      }    
+      .fancyTab.active .fa 
+      {
+        color: #333;
+      }
+    }
+
+    /* Style Timeline ------------------------------------------------------------------ */
+    /* Style by mylastof modified by Emeric Hochart ------------------------------------ */
+    ul.timeline 
+    {
+        list-style-type: none;
+        position: relative;
+    }
+    ul.timeline:before 
+    {
+        content: ' ';
+        background: #9b9b9b;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+    ul.timeline > li 
+    {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    ul.timeline > li:before 
+    {
+        content: ' ';
+        background: #db0000;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #db0000;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+    }
+
+
+    /* Style Slider Partenaires -------------------------------------------------------- */
+    /* Style by Jack Oliver modified by Emeric Hochart --------------------------------- */
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+    .slider {
+      background: white;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      height: 198px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    .slider::before, .slider::after {
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 200px;
+      z-index: 2;
+    }
+    .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+    .slider::before {
+      left: 0;
+      top: 0;
+    }
+    .slider .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+    .slider .slide {
+      height: 100px;
+      width: 250px;
+    }
