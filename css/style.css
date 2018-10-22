@@ -125,6 +125,10 @@
     {
         max-width: 100%;
     }
+    .modal-content
+    {
+        color: #333;
+    }
     .pagination
     {
         padding-top: 0px;
